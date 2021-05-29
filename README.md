@@ -73,8 +73,8 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
 
 
 # 4. Directory Structure (under directory codes)
- 
-before training (Defualt)
+
+before training (Defualt)  
 ─ codes				-top dir  
   ├── data			-data dir  
   │  ├── test  
