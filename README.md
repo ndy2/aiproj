@@ -78,15 +78,15 @@ before training (Defualt)
 ─ codes				-top dir  
   ├── data			-data dir  
   │  ├── test  
-  │  │   ├── test_annotations	-test annotations 
-  │  │   │   └── voc_xml	-ann voc xml format 
-  │  │   └── test_images		-test images 
-  │  └── train_val 
-  │       ├── Annotations		-train annotations (voc xml format)
-  │       └── JPEGImages		-train images 
-  ├─ train_2016310703.py 
-  ├─ test_2016310703.py 
-  └─ utils_2016310703.py 
+  │  │   ├── test_annotations	-test annotations  
+  │  │   │   └── voc_xml	-ann voc xml format  
+  │  │   └── test_images		-test images  
+  │  └── train_val  
+  │       ├── Annotations		-train annotations (voc xml format)  
+  │       └── JPEGImages		-train images  
+  ├─ train_2016310703.py  
+  ├─ test_2016310703.py  
+  └─ utils_2016310703.py  
   
 
 # 5. Reference
