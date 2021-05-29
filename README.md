@@ -76,17 +76,29 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
  
 before training (Defualt) 
 ─ codes				-top dir 
+
   ├── data			-data dir 
+  
   │  ├── test			 
+  
   │  │   ├── test_annotations	-test annotations 
+  
   │  │   │   └── voc_xml	-ann voc xml format 
+  
   │  │   └── test_images		-test images 
+  
   │  └── train_val 
-  │       ├── Annotations		-train annotations (voc xml format) 
+  
+  │       ├── Annotations		-train annotations (voc xml format)
+  
   │       └── JPEGImages		-train images 
+  
   ├─ train_2016310703.py 
+  
   ├─ test_2016310703.py 
+  
   └─ utils_2016310703.py 
+  
 
 # 5. Reference
 [**Yolo-v2-pytorch**] (https://github.com/uvipen/Yolo-v2-pytorch)
