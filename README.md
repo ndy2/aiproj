@@ -90,13 +90,9 @@ before training (Defualt)
   │  └── train_val 
   
   │       ├── Annotations		-train annotations (voc xml format)
-  
   │       └── JPEGImages		-train images 
-  
   ├─ train_2016310703.py 
-  
   ├─ test_2016310703.py 
-  
   └─ utils_2016310703.py 
   
 
