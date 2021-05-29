@@ -97,5 +97,5 @@ before training (Defualt)
   
 
 # 5. Reference
-[**Yolo-v2-pytorch**] (https://github.com/uvipen/Yolo-v2-pytorch)
-[**mAP] (https://github.com/Cartucho/mAP)
+[**Yolo-v2-pytorch**](https://github.com/uvipen/Yolo-v2-pytorch)
+[**mAP](https://github.com/Cartucho/mAP)
