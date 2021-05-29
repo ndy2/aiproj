@@ -74,21 +74,14 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
 
 # 4. Directory Structure (under directory codes)
  
-before training (Defualt) 
-─ codes				-top dir 
-
-  ├── data			-data dir 
-  
-  │  ├── test			 
-  
+before training (Defualt)
+─ codes				-top dir  
+  ├── data			-data dir  
+  │  ├── test  
   │  │   ├── test_annotations	-test annotations 
-  
   │  │   │   └── voc_xml	-ann voc xml format 
-  
   │  │   └── test_images		-test images 
-  
   │  └── train_val 
-  
   │       ├── Annotations		-train annotations (voc xml format)
   │       └── JPEGImages		-train images 
   ├─ train_2016310703.py 
