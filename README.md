@@ -73,8 +73,9 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
 
 
 # 4. Directory Structure (under directory codes)
-<pre>
+
 ## 4.1 before training (Defualt)  
+<pre>
 ─ codes/				-top  
   ├── data/			-data  
   │  ├── test/  
@@ -87,8 +88,9 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
   ├─ train_2016310703.py  
   ├─ test_2016310703.py  
   └─ utils_2016310703.py  
-
+</pre>
 ## 4.2 after training   
+<pre>
 ─ codes/  
   ├── data/  
   │  ├── test/                          - test data dir - not changed  
@@ -103,8 +105,9 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
   │  └── tensorboard/yolo_voc/2012/  
   │       └── events.out.tfevents.*.*		 - tensorboard file for training  
   └─ *_2016310703.py   
-
+</pre>
 ## 4.3 after test  
+<pre>
 ─ codes/  
   ├── data/   
   │  ├── test/  
