@@ -73,7 +73,7 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
 
 
 # 4. Directory Structure (under directory codes)
-
+<pre>
 ## 4.1 before training (Defualt)  
 ─ codes/				-top  
   ├── data/			-data  
@@ -123,7 +123,7 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
   │       ├── images/                  - detected image w/ bounding boxes  
   │       └── yolo_text/               - bounding box info in yolo format  
   └─ *_2016310703.py  
-
+</pre>
 
   
 # 5. Reference
