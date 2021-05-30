@@ -91,7 +91,7 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
 ## 4.2 after training   
 ─ codes/  
   ├── data/  
-  │  ├── test/                          - test data dir - not changed
+  │  ├── test/                          - test data dir - not changed  
   │  └── train_val/  
   │       ├── Annotations/  
   │       ├── indices/		              - train/val data indices  
