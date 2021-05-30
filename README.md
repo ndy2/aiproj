@@ -74,37 +74,58 @@ input아래에는 꼭 test_images directory와 test_annotations directory가 나
 
 # 4. Directory Structure (under directory codes)
 
-before training (Defualt)  
-─ codes				-top dir  
-  ├── data			-data dir  
-  │  ├── test  
-  │  │   ├── test_annotations	-test annotations  
-  │  │   │   └── voc_xml	-ann voc xml format  
-  │  │   └── test_images		-test images  
-  │  └── train_val  
-  │       ├── Annotations		-train annotations (voc xml format)  
-  │       └── JPEGImages		-train images  
+## 4.1 before training (Defualt)  
+─ codes/				-top  
+  ├── data/			-data  
+  │  ├── test/  
+  │  │   ├── test_annotations/	-test annotations  
+  │  │   │   └── voc_xml/	-ann voc xml format  
+  │  │   └── test_images/		-test images  
+  │  └── train_val/  
+  │       ├── Annotations/		-train annotations (voc xml format)  
+  │       └── JPEGImages/		-train images  
   ├─ train_2016310703.py  
   ├─ test_2016310703.py  
   └─ utils_2016310703.py  
 
-after training   
-─ codes				-top dir  
-  ├── data			-data dir  
-  │  ├── test  
-  │  │   ├── test_annotations	-test annotations  
-  │  │   │   └── voc_xml	-ann voc xml format  
-  │  │   └── test_images		-test images  
-  │  └── train_val  
-  │       ├── Annotations		-train annotations (voc xml format)  
-  │       └── JPEGImages		-train images  
-  │  └── trained_models  
-  │       └── model_2016310703		-trained model  
-  ├─ train_2016310703.py  
-  ├─ test_2016310703.py  
-  └─ utils_2016310703.py  
+## 4.2 after training   
+─ codes/				  
+  ├── data/  
+  │  ├── test/                          - test data dir - not changed
+  │  └── train_val/  
+  │       ├── Annotations/ 
+  │       ├── indices/		              - train/val data indices
+  │       │      ├── train.txt		      - train data indices  
+  │       │      └── val.txt		        - val data indices
+  │       └── JPEGImages/		
+  │  └── trained_models/  
+  │       └── model_2016310703.pt		     - trained model  
+  │  └── tensorboard/yolo_voc/2012/  
+  │       └── events.out.tfevents.*.*		 - tensorboard file for training 
+  └─ *_2016310703.py                     - not changed  
+
+## 4.3 after test  
+─ codes/     
+  ├── data/   
+  │  ├── test/  
+  │  │   ├── test_annotations/	      - test annotations  
+  │  │   │   ├── voc_xml/	            
+  │  │   │   └── yolo_text/	          - ann yolo text format  
+  │  │   └── test_images/		          - test images  
+  │  └── train_val/                   
+  │  └── trained_models/  
+  │  └── tensorboard/yolo_voc/2012/  
+  │  └── output/                      - output statistics (mAP only) 
+  │       ├── classes/                - Precision-Recall graph for each class
+  │       ├── some png files          - test result graphs
+  │       └── output.txt              - test result text
+  │  └── test_out/                    - output results 
+  │       ├── images/                  - detected image w/ bounding boxes
+  │       └── yolo_text/               - bounding box info in yolo format  
+  └─ *_2016310703.py                     - not changed  
 
 
+  
 # 5. Reference
 [**Yolo-v2-pytorch**](https://github.com/uvipen/Yolo-v2-pytorch)
 
