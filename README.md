@@ -40,6 +40,15 @@ Eearly Stopping 관련 parameters입니다.
 es_min_delta (float)는 현재 validation loss 와 과거 validation loss의 차이에 따라 Epoch를 모두 돌지 않고 학습을 종료할 수 있게 합니다.
 es_patience (int) 는 최적의 validation loss 등장후 loss가 감소하지 않고 해당 횟수만큼 validate 과정이 진행 될 시 학습을 종료시키도록 하는 변수입니다.
 
+### 1.1.7 learning rate
+SGD optimizer에 적용된 learning rate schedule입니다.
+|         Epoches        | Learning rate |
+|------------------------|:---------------:|
+|          0-4           |      1e-5     |
+|          5-79          |      1e-4     |
+|          80-109        |      1e-5     |
+|          110-end       |      1e-6     |
+
 ## 1.2 Test
 ## 1.2.1 conf-threshold (default = 0.35)
 bounding box에 대한 confidence가 0.35이상일시 bounding 박스를 표시합니다.
